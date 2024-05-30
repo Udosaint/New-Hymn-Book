@@ -1,0 +1,9 @@
+eas init
+
+eas build:configure
+
+//to build the app for android local use in emulator
+eas build --platform android --profile development
+
+//to build the app for ios local use in emulator
+eas build --platform ios --profile ios-simulator

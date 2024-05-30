@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "New-Hymn-Book",
+    "name": "New Hymn Book",
     "slug": "New-Hymn-Book",
-    "version": "1.0.0",
+    "version": "1.1.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.udosaint.NewHymnBook"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +32,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "fc2fc618-2e72-42e5-a81e-d5b6905e92cb"
+      }
+    },
+    "owner": "udosaint"
   }
 }
