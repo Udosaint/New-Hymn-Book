@@ -10,6 +10,9 @@ import hymnDataFrom401To200 from "../assets/hymns/hymn-401-600.json";
 import hymnDataFrom601To865 from "../assets/hymns/hymn-601-865.json";
 import NoHymn from '../components/NoHymn.js';
 
+
+//import "../global.css";
+
 export default function Hymn() {
 
     const params = useLocalSearchParams();
@@ -70,10 +73,11 @@ export default function Hymn() {
                             <View style={{ alignItems: "center", marginBottom: 10 }}>
 
                                 <Text
+                                    className=" text-blue-800 dark:text-blue-500"
                                     style={{
                                         fontSize: 24,
                                         fontWeight: "800",
-                                        color: "blue",
+                                        //color: "blue",
                                         textAlign: "center",
                                     }}
                                 >
@@ -92,6 +96,7 @@ export default function Hymn() {
                                     {/* Verse or Chourus */}
 
                                     <Text
+                                        className="dark:text-teal-500"
                                         style={{
                                             fontSize: 20,
                                             fontWeight: "800",
@@ -105,11 +110,13 @@ export default function Hymn() {
 
                                     {verse.data.map((line, index) => (
                                         <View key={index} style={{ marginBottom: 3 }}>
-                                            <Text style={{
-                                                fontSize: 17,
-                                                textAlign: "left",
-                                                fontStyle: verse.number.includes("chorus") ? "italic" : ""
-                                            }}>
+                                            <Text
+                                                className="dark:text-white"
+                                                style={{
+                                                    fontSize: 17,
+                                                    textAlign: "left",
+                                                    fontStyle: verse.number.includes("chorus") ? "italic" : ""
+                                                }}>
                                                 {line}
                                             </Text>
                                         </View>

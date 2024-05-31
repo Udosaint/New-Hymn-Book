@@ -17,7 +17,7 @@ export default function NoHymn({ hymn }) {
     return (
         <View
             style={{ flex: 1 }}
-            className="flex-1  bg-blue-100">
+            className="flex-1  bg-blue-50">
             <Stack.Screen
                 options={{ title: "HYMN " + hymnNumber, headerTitleAlign: "center" }}
             />
@@ -41,13 +41,9 @@ export default function NoHymn({ hymn }) {
                 </Text>
 
                 <View
-                    style={{
-                        flexDirection: "row",
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                        backgroundColor: "#bbdefb",
-                        padding: 20,
-                    }}
+                    className="flex-row items-center 
+                justify-between gap-2 bg-sky-300
+                 dark:bg-slate-300 px-2 py-4"
                 >
                     <View
                         style={{ flex: 1 }}
@@ -70,11 +66,12 @@ export default function NoHymn({ hymn }) {
                         }}>
                         <TouchableOpacity
                             style={{ backgroundColor: '#3f4eee', padding: 10, borderRadius: 5 }}
+                            className=" bg-blue-800 p-10 rounded justify-center"
                             onPress={getHymn}
                         >
                             <Text
-                                className="text-white"
-                                style={{ fontSize: 15, fontWeight: "bold", color: "white" }}
+                                className="text-white uppercase font-black"
+                                style={{ fontSize: 15, fontWeight: "bold" }}
                             >
                                 Send
                             </Text>
