@@ -37,17 +37,15 @@ export default function Hymn() {
         } else if (hymnNumber <= 400) {
             const isHymn = hymnDataFrom201To400.filter((item) => item.id == hymnNumber);
             setMyhymn(isHymn);
-        } else {
-            return <NoHymn hymn={hymnNumber} />
         }
 
-        // else if (hymnNumber <= 600) {
-        //     const isHymn = hymnDataFrom401To200.filter((item) => item.id == hymnNumber);
-        //     setMyhymn(isHymn);
-        // } else {
-        //     const isHymn = hymnDataFrom601To865.filter((item) => item.id == hymnNumber);
-        //     setMyhymn(isHymn);
-        // }
+        else if (hymnNumber <= 600) {
+            const isHymn = hymnDataFrom401To200.filter((item) => item.id == hymnNumber);
+            setMyhymn(isHymn);
+        } else {
+            const isHymn = hymnDataFrom601To865.filter((item) => item.id == hymnNumber);
+            setMyhymn(isHymn);
+        }
 
     }
 

@@ -1,4 +1,4 @@
-import { View, Text, TextInput, TouchableOpacity, ToastAndroid, Alert } from 'react-native'
+import { View, Text, TextInput, TouchableOpacity, ToastAndroid, Alert, ImageBackground, Image } from 'react-native'
 import React, { useState } from 'react'
 import { router } from 'expo-router';
 
@@ -16,14 +16,30 @@ export default function Home() {
     };
     return (
         <View
-            style={{ flex: 1, justifyContent: "center" }}
-            className=" bg-blue-50 px-2"
+            style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+            className=" bg-blue-50"
         >
+            <Image
+                className=""
+                source={require('../assets/images/icon.png')}
+                style={{
+                    flex: 1,
+                    width: ' 100%',
+                    height: '80%',
+                    justifyContent: "center",
+                    alignItems: "center",
+                    opacity: 0.3,
+                    position: "absolute",
+                    marginLeft: 50
+                }}
+
+
+            />
 
             <View
                 className="flex-row items-center 
                 justify-between gap-2 bg-sky-300
-                 dark:bg-slate-300 px-2 py-4"
+                 dark:bg-slate-300 px-4 py-4"
             >
                 <View style={{ flex: 2 }}>
                     <TextInput
@@ -47,6 +63,7 @@ export default function Home() {
                     </TouchableOpacity>
                 </View>
             </View>
+
         </View>
     )
 }
