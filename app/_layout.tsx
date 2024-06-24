@@ -34,21 +34,21 @@ export default function RootLayout() {
   }
 
   return (
-    // <ThemeProvider value={colorScheme === "light" ? DefaultTheme : DarkTheme}>
-
-    // </ThemeProvider>
-
-    <Stack>
-      <Stack.Screen
-        name="index"
-        options={{
-          headerShown: true,
-          title: "New Hymn Book",
-          headerTitleAlign: "center",
-        }}
-      />
-      <Stack.Screen name="hymn" />
-      <Stack.Screen name="+not-found" />
-    </Stack>
+    <ThemeProvider
+      value={colorScheme === "light" ? DefaultTheme : DefaultTheme}
+    >
+      <Stack>
+        <Stack.Screen
+          name="index"
+          options={{
+            headerShown: true,
+            title: "New Hymn Book",
+            headerTitleAlign: "center",
+          }}
+        />
+        <Stack.Screen name="hymn" />
+        <Stack.Screen name="+not-found" />
+      </Stack>
+    </ThemeProvider>
   );
 }

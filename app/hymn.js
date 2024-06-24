@@ -71,11 +71,10 @@ export default function Hymn() {
                             <View style={{ alignItems: "center", marginBottom: 10 }}>
 
                                 <Text
-                                    className=" text-blue-800 dark:text-blue-500"
                                     style={{
                                         fontSize: 24,
                                         fontWeight: "800",
-                                        //color: "blue",
+                                        color: "blue",
                                         textAlign: "center",
                                     }}
                                 >
@@ -96,6 +95,7 @@ export default function Hymn() {
                                     <Text
                                         className="dark:text-teal-500"
                                         style={{
+                                            color: verse.number.includes("chorus") ? "red" : "",
                                             fontSize: 20,
                                             fontWeight: "800",
                                             textTransform: "capitalize",

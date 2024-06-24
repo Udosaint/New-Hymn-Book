@@ -28,22 +28,28 @@ export default function NoHymn({ hymn }) {
                     justifyContent: 'center',
                     padding: 10
                 }}
-                className="flex-1 items-center justify-center">
+            >
                 <Text
                     style={{
                         alignItems: "center",
+                        textTransform: "uppercase",
                         marginBottom: 10,
                         textAlign: "center",
-                        fontSize: 25
+                        fontSize: 22
                     }}
                     className="text-dark uppercase font-extrabold mb-3">
                     Hymn {hymnNumber} is not available yet
                 </Text>
 
                 <View
-                    className="flex-row items-center 
-                justify-between gap-2 bg-sky-300
-                 dark:bg-slate-300 px-2 py-4"
+                    style={{
+                        flexDirection: "row",
+                        paddingHorizontal: 10,
+                        backgroundColor: "#0669c6",
+                        paddingVertical: 10,
+                        justifyContent: "center",
+                        alignItems: "center"
+                    }}
                 >
                     <View
                         style={{ flex: 1 }}
@@ -66,12 +72,10 @@ export default function NoHymn({ hymn }) {
                         }}>
                         <TouchableOpacity
                             style={{ backgroundColor: '#3f4eee', padding: 10, borderRadius: 5 }}
-                            className=" bg-blue-800 p-10 rounded justify-center"
                             onPress={getHymn}
                         >
                             <Text
-                                className="text-white uppercase font-black"
-                                style={{ fontSize: 15, fontWeight: "bold" }}
+                                style={{ fontSize: 15, fontWeight: "bold", textTransform: "uppercase", color: "white" }}
                             >
                                 Send
                             </Text>
