@@ -53,7 +53,7 @@ export default function Home() {
 
                 <View style={{ flex: 0.5, alignContent: "center", justifyContent: "center" }}>
                     <TouchableOpacity
-                        style={{ backgroundColor: 'rgb(30 64 175)', padding: 10, borderRadius: 5 }}
+                        style={{ backgroundColor: 'rgb(30 64 175)', padding: 10, borderRadius: 5, alignItems: 'center' }}
                         onPress={getHymnBook}
                     >
                         <Text style={{ fontSize: 15, fontWeight: "bold", color: "white", textTransform: "uppercase" }}>
@@ -75,9 +75,9 @@ const style = StyleSheet.create({
 
         flexDirection: "row",
         paddingHorizontal: 10,
-        backgroundColor: "#0669c6",
+        backgroundColor: "#70AAF6",
         paddingVertical: 10,
-        marginHorizontal: 6,
+        marginHorizontal: 2,
         alignContent: "center",
         justifyContent: "center"
     }

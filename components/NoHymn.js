@@ -26,7 +26,7 @@ export default function NoHymn({ hymn }) {
                 style={{
                     flex: 1,
                     justifyContent: 'center',
-                    padding: 10
+                    padding: 5
                 }}
             >
                 <Text
@@ -45,7 +45,7 @@ export default function NoHymn({ hymn }) {
                     style={{
                         flexDirection: "row",
                         paddingHorizontal: 10,
-                        backgroundColor: "#0669c6",
+                        backgroundColor: "#70AAF6",
                         paddingVertical: 10,
                         justifyContent: "center",
                         alignItems: "center"
@@ -71,7 +71,7 @@ export default function NoHymn({ hymn }) {
                             justifyContent: "center"
                         }}>
                         <TouchableOpacity
-                            style={{ backgroundColor: '#3f4eee', padding: 10, borderRadius: 5 }}
+                            style={{ backgroundColor: 'rgb(30 64 175)', padding: 10, borderRadius: 5 }}
                             onPress={getHymn}
                         >
                             <Text
