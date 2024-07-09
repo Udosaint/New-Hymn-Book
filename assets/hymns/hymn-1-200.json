@@ -4359,7 +4359,42 @@
       }
     ]
   },
-
+  {
+    "id": "74",
+    "background": "",
+    "ryhmn": "",
+    "season": "",
+    "title": " Come, Holy Spirit; Heavenly Dove!",
+    "contents": [
+      {
+        "number": "verse 1",
+        "data": [
+          "Come, Holy Spirit; Heavenly Dove!",
+          "With all Thy quickening powers,",
+          "Kindle a flame of sacred love",
+          "In these Cold hearts of ours."
+        ]
+      },
+      {
+        "number": "verse 2",
+        "data": [
+          "O Lord, and shall we ever live",
+          "At this poor dying rate?",
+          "Our love so faint, so cold to Thee,",
+          "And Thine to us so great."
+        ]
+      },
+      {
+        "number": "verse 3",
+        "data": [
+          "Come, Holy Spirit, Heavenly Dove!",
+          "With all Thy quickening powers,",
+          "Come shed abroad a Saviour's love,",
+          "And that shall kindle ours. Amen."
+        ]
+      }
+    ]
+  },
   {
     "id": "75",
     "background": "",
@@ -6925,24 +6960,15 @@
       },
       {
         "number": "chorus",
-        "data": [
-          "Jesus died, He really died,", 
-          "For me, you, and all mankind"
-        ]
+        "data": ["Jesus died, He really died,", "For me, you, and all mankind"]
       },
       {
         "number": "verse 2",
-        "data": [
-          "All people are but sinners", 
-          "In the eyes of Holy God."
-        ]
+        "data": ["All people are but sinners", "In the eyes of Holy God."]
       },
       {
         "number": "verse 3",
-        "data": [
-          "Jesus, Son of the Father,", 
-          " Has His love so much for us."
-        ]
+        "data": ["Jesus, Son of the Father,", " Has His love so much for us."]
       },
       {
         "number": "verse 4",
@@ -6960,10 +6986,7 @@
       },
       {
         "number": "verse 6",
-        "data": [
-          "He, crucified on the cross", 
-          "For us all who are sinners."
-        ]
+        "data": ["He, crucified on the cross", "For us all who are sinners."]
       },
       {
         "number": "verse 7",
